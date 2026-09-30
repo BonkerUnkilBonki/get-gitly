@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en" data-accent="blue">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Gitly — your GitHub, beautifully yours. A fast, One UI-styled GitHub client for Android and the web: repos, commits, issues, READMEs, heatmaps, widgets and more.">
+<meta name="theme-color" content="#1B6EF3">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Gitly — your GitHub, beautifully yours">
+<meta property="og:description" content="A One UI-styled GitHub client for Android and the web. Repos, commits, issues, READMEs, productivity heatmaps, home-screen widgets — everything GitHub, beautifully yours.">
+<meta property="og:type" content="website">
+<title>Gitly — your GitHub, beautifully yours</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<!-- ============ TOP NAV (frosted pill, like the app's navbar) ============ -->
+<nav id="topnav" aria-label="Main">
+  <a class="navbrand" href="#hero">
+    <span class="navlogo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 5 3 12 8 19"/><polyline points="16 5 21 12 16 19"/></svg></span>
+    <span class="navbrandname">Gitly</span>
+  </a>
+  <span class="navsep" aria-hidden="true"></span>
+  <a class="tnavlink" href="#features">Features</a>
+  <a class="tnavlink" href="#screens">Screens</a>
+  <a class="tnavlink" href="#personalize">Personalize</a>
+  <a class="tnavlink" href="#widgets">Widgets</a>
+  <span class="navsep" aria-hidden="true"></span>
+  <button id="themeBtn" class="iconbtn" aria-label="Switch theme" title="Light / Dark / Pitch">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+  </button>
+  <a class="btn primary tnavcta" href="https://github.com/BonkerUnkilBonki/OneGit/releases/latest" target="_blank" rel="noopener">Get the app</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="hero">
+  <div class="hero-bg" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 5 3 12 8 19"/><polyline points="16 5 21 12 16 19"/></svg>
+      </div>
+      <h1 class="hero-title">Gitly</h1>
+      <p class="hero-sub">Your GitHub,<br>beautifully yours.</p>
+      <ul class="hero-points">
+        <li>Browse repos, commits, issues & releases</li>
+        <li>Read READMEs rendered perfectly</li>
+        <li>Track productivity with heatmaps</li>
+        <li>Star, watch, fork, edit — everything</li>
+      </ul>
+      <div class="hero-ctas">
+        <a class="btn primary" href="https://github.com/BonkerUnkilBonki/OneGit/releases/latest" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" style="flex-shrink:0"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download for Android
+        </a>
+        <a class="btn ghost" href="https://github.com/BonkerUnkilBonki/OneGit" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17" style="flex-shrink:0"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          Source on GitHub
+        </a>
+      </div>
+      <p class="hero-meta">v2.68 · Android 7.0+ · also available as <a href="#download">Gitly&nbsp;Web</a> for every browser</p>
+    </div>
+
+    <!-- Home screen mock, built with the app's own components -->
+    <div class="hero-phone" aria-hidden="true">
+      <div class="phone">
+        <div class="punch"></div>
+        <div class="screen">
+          <div class="statusbar"><span>21:04</span><span>▮▮▮ ⚡</span></div>
+          <div class="phonehead">
+            <h1 class="bigTitle">Hi, there</h1>
+            <p class="bigSub">Your GitHub at a glance</p>
+          </div>
+          <div class="phonescroll">
+            <div class="card profile">
+              <img class="pav" src="https://github.com/BonkerUnkilBonki.png" alt="" onerror="this.src='logo.jpg'">
+              <div class="pname">NOTA's</div>
+              <div class="plogin">@BonkerUnkilBonki</div>
+              <div class="pstats">
+                <div class="pstat"><b>84</b><span>Repos</span></div>
+                <div class="pstat"><b>128</b><span>Followers</span></div>
+                <div class="pstat"><b>32</b><span>Following</span></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="sect sm">Productivity</div>
+              <div class="daybars">
+                <div class="daybar"><span style="height:34%"></span><i>M</i></div>
+                <div class="daybar"><span style="height:58%"></span><i>T</i></div>
+                <div class="daybar"><span style="height:22%"></span><i>W</i></div>
+                <div class="daybar cur"><span style="height:80%"></span><i>T</i></div>
+                <div class="daybar"><span style="height:48%"></span><i>F</i></div>
+                <div class="daybar"><span style="height:64%"></span><i>S</i></div>
+                <div class="daybar"><span style="height:12%"></span><i>S</i></div>
+              </div>
+              <div class="heatwrap" data-heat="24"></div>
+              <div class="commitstats">
+                <div class="cstat add">+1,284<span>additions</span></div>
+                <div class="cstat del">−396<span>deletions</span></div>
+                <div class="cstat today">12<span>commits today</span></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="sect sm">Pinned</div>
+              <div class="rcname sm">OneGit</div>
+              <div class="rcdesc">The One UI-styled GitHub client you're looking at.</div>
+              <div class="rcmeta">
+                <span><i class="dot" style="background:#F1E05A"></i>JavaScript</span>
+                <span>★ 248</span><span>⑂ 31</span>
+              </div>
+            </div>
+          </div>
+          <nav class="phonenav">
+            <button class="navbtn active"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span><span class="nlbl">Home</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="nlbl">Repos</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.5"/><line x1="1" y1="12" x2="8.5" y2="12"/><line x1="15.5" y1="12" x2="23" y2="12"/></svg></span><span class="nlbl">Commits</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><span class="nlbl">Activity</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span><span class="nlbl">Issues</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span><span class="nlbl">Alerts</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span><span class="nlbl">Settings</span></button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ FEATURES ============ -->
+<section id="features">
+  <div class="wrap">
+    <h2 class="sect big">Everything GitHub,<br>in One UI</h2>
+    <p class="sectsub">The whole GitHub experience — browsing, reading, editing, shipping — wrapped in the clean cards, pill navigation and soft glows you see on this page. That's not a coincidence: this site is built with Gitly's own design system.</p>
+    <div class="featgrid">
+      <div class="card featcard"><span class="eicon push"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><h3>Repos, mastered</h3><p>Your repos, starred repos and search-discovery in one place. Star, watch, fork, clone, rename, edit the description, flip public/private — and upload or edit files right from your phone.</p></div>
+      <div class="card featcard"><span class="eicon tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg></span><h3>READMEs, rendered perfectly</h3><p>Markdown, badges, stats cards, images, embedded videos and collapsible panels — all styled like cards. Camo-proxy images are unmasked and big files fall back to the Git blobs API, so READMEs load on every network.</p></div>
+      <div class="card featcard"><span class="eicon push"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.5"/><line x1="1" y1="12" x2="8.5" y2="12"/><line x1="15.5" y1="12" x2="23" y2="12"/></svg></span><h3>Commits with real diffs</h3><p>Every commit across every repo, with green/red patches, per-file diffs and addition/deletion stats — plus a "commits today" counter that keeps you honest.</p></div>
+      <div class="card featcard"><span class="eicon issue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span><h3>Issues & pull requests</h3><p>A global inbox for your issues and PRs, with full conversation threads, replies, states and labels. Tap any thread and reply without leaving the app.</p></div>
+      <div class="card featcard"><span class="eicon comment"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span><h3>Alerts that respect you</h3><p>GitHub notifications with unread dots, one-tap triage, and activity history that is never cleared — so nothing slips by while you were away.</p></div>
+      <div class="card featcard"><span class="eicon star"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><h3>Productivity, visualised</h3><p>Contribution heatmaps, weekday bars and commit stats turn your GitHub into a glanceable dashboard — on the Home tab and on your home screen.</p></div>
+      <div class="card featcard"><span class="eicon fork"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span><h3>Gists & cross-device sync</h3><p>Create and browse gists — secret ones too — and Gitly uses a private gist to sync your pins and preferences across every device you sign in on.</p></div>
+      <div class="card featcard"><span class="eicon user"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><h3>Multi-account</h3><p>Work and personal accounts live side by side — switch between them in one tap, no signing out and back in.</p></div>
+      <div class="card featcard"><span class="eicon create"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span><h3>github.com deep links</h3><p>Open any github.com repo or profile link and Gitly takes over — it becomes the viewer, keeping you inside the One UI experience.</p></div>
+      <div class="card featcard"><span class="eicon pr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></span><h3>Built-in updates</h3><p>Gitly watches its own releases and tells you when a new version lands — with a changelog viewer, one-tap APK download and optional auto-download. This page's app mock is v2.68.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCREENS ============ -->
+<section id="screens">
+  <div class="wrap">
+    <h2 class="sect big">The app, on your phone</h2>
+    <p class="sectsub">Every screen is a One UI screen: 32-point rounded cards, frosted glass pills, accent glows. These mockups are built with the same styles the real app ships.</p>
+    <div class="screens-row">
+
+      <div class="phone sm">
+        <div class="punch"></div>
+        <div class="screen">
+          <div class="statusbar"><span>21:04</span><span>▮▮▮ ⚡</span></div>
+          <div class="phonehead"><h1 class="bigTitle">OneGit</h1><p class="bigSub">your repos › featured</p></div>
+          <div class="phonescroll">
+            <div class="card">
+              <div class="rcrow">
+                <div class="rcname">BonkerUnkilBonki / OneGit</div>
+                <span class="pinbtn pinned" style="pointer-events:none"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="17" x2="12" y2="22"/><path d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24z"/></svg></span>
+              </div>
+              <div class="rcdesc">Your GitHub, beautifully yours — a fast, One UI-styled client for Android and the web.</div>
+              <div class="rcmeta"><span><i class="dot" style="background:#F1E05A"></i>JavaScript</span><span>★ 248</span><span>⑂ 31</span><span>MIT</span></div>
+              <div class="actionrow" style="margin-top:14px">
+                <button class="btn primary sm" style="pointer-events:none">★ Starred</button>
+                <button class="btn ghost sm" style="pointer-events:none">Watch</button>
+                <button class="btn ghost sm" style="pointer-events:none">⑂ Fork</button>
+              </div>
+              <div class="bigstats">
+                <div class="bstat"><b>248</b><span>stars</span></div>
+                <div class="bstat"><b>31</b><span>forks</span></div>
+                <div class="bstat"><b>14</b><span>issues</span></div>
+                <div class="bstat"><b>82</b><span>releases</span></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="sect sm">README.md</div>
+              <div class="md">
+                <h1 style="font-size:18px">Gitly</h1>
+                <p>Your GitHub, <strong>beautifully yours</strong>. A One UI-styled GitHub client:</p>
+                <ul><li>Repos, commits, issues & PRs</li><li>Perfectly rendered READMEs</li><li>Contribution heatmaps</li></ul>
+                <pre><code>./build.sh → Gitly.apk</code></pre>
+              </div>
+            </div>
+            <div class="card">
+              <div class="sect sm">Latest release</div>
+              <div class="lrow" style="pointer-events:none">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <div class="lmain"><div class="ltitle">v2.68 · complete README compatibility</div><div class="lsub">Gitly.apk · 6.2 MB</div></div>
+              </div>
+            </div>
+          </div>
+          <nav class="phonenav">
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span><span class="nlbl">Home</span></button>
+            <button class="navbtn active"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="nlbl">Repos</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.5"/><line x1="1" y1="12" x2="8.5" y2="12"/><line x1="15.5" y1="12" x2="23" y2="12"/></svg></span><span class="nlbl">Commits</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><span class="nlbl">Activity</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span><span class="nlbl">Issues</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span><span class="nlbl">Alerts</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span><span class="nlbl">Settings</span></button>
+          </nav>
+        </div>
+      </div>
+
+      <div class="phone sm">
+        <div class="punch"></div>
+        <div class="screen">
+          <div class="statusbar"><span>21:04</span><span>▮▮▮ ⚡</span></div>
+          <div class="phonehead"><h1 class="bigTitle">Alerts</h1><p class="bigSub">What's new on your GitHub</p></div>
+          <div class="phonescroll">
+            <div class="card list">
+              <div class="lrow unread" style="pointer-events:none">
+                <span class="eicon push"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                <div class="lmain"><div class="ltitle">OneGit: new release v2.68</div><div class="lsub">published 2h ago</div></div>
+                <span class="ndot" style="visibility:visible"></span>
+              </div>
+              <div class="lrow unread" style="pointer-events:none">
+                <span class="eicon pr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.5"/><line x1="1" y1="12" x2="8.5" y2="12"/><line x1="15.5" y1="12" x2="23" y2="12"/></svg></span>
+                <div class="lmain"><div class="ltitle">PR #82 merged: fix camo unmasking</div><div class="lsub">BonkerUnkilBonki/OneGit</div></div>
+                <span class="ndot" style="visibility:visible"></span>
+              </div>
+              <div class="lrow" style="pointer-events:none">
+                <span class="eicon issue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+                <div class="lmain"><div class="ltitle">Issue #41: heatmap on 4x2 widget</div><div class="lsub">closed 1d ago</div></div>
+              </div>
+              <div class="lrow" style="pointer-events:none">
+                <span class="eicon star"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <div class="lmain"><div class="ltitle">someone starred OneGit</div><div class="lsub">3d ago</div></div>
+              </div>
+              <div class="lrow" style="pointer-events:none">
+                <span class="eicon fork"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></span>
+                <div class="lmain"><div class="ltitle">devgeek forked OneGit</div><div class="lsub">5d ago</div></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="sect sm">Activity</div>
+              <div class="lrow" style="pointer-events:none">
+                <span class="eicon push"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                <div class="lmain"><div class="ltitle">pushed 6 commits to main</div><div class="lsub">BonkerUnkilBonki/OneGit · 1h ago</div></div>
+              </div>
+              <div class="lrow" style="pointer-events:none">
+                <span class="eicon create"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
+                <div class="lmain"><div class="ltitle">created repo gitly-web</div><div class="lsub">2d ago</div></div>
+              </div>
+            </div>
+          </div>
+          <nav class="phonenav">
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span><span class="nlbl">Home</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="nlbl">Repos</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.5"/><line x1="1" y1="12" x2="8.5" y2="12"/><line x1="15.5" y1="12" x2="23" y2="12"/></svg></span><span class="nlbl">Commits</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span><span class="nlbl">Activity</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span><span class="nlbl">Issues</span></button>
+            <button class="navbtn active"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span><span class="nlbl">Alerts</span></button>
+            <button class="navbtn"><span class="nic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span><span class="nlbl">Settings</span></button>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERSONALIZE ============ -->
+<section id="personalize">
+  <div class="wrap">
+    <h2 class="sect big">Make it yours</h2>
+    <p class="sectsub">Three themes, eight accent colours, a custom colour picker, dynamic system colour, glow you can switch off, and bundled fonts. Go ahead — the controls below restyle this whole page, exactly like the app's Settings restyle the app.</p>
+    <div class="card personalize-card">
+      <div class="seg" id="themeSeg" role="group" aria-label="Theme">
+        <button class="segb on" data-theme="">Light</button>
+        <button class="segb" data-theme="dark">Dark</button>
+        <button class="segb" data-theme="pitch">Pitch black</button>
+      </div>
+      <label class="fldlabel">Accent colour</label>
+      <div class="accentrow" id="accentRow">
+        <button class="accentdot on" data-accent="blue"   style="background:#1B6EF3" aria-label="Blue"></button>
+        <button class="accentdot"    data-accent="purple" style="background:#8B5CF6" aria-label="Purple"></button>
+        <button class="accentdot"    data-accent="green"  style="background:#12B76A" aria-label="Green"></button>
+        <button class="accentdot"    data-accent="pink"   style="background:#EC4899" aria-label="Pink"></button>
+        <button class="accentdot"    data-accent="amber"  style="background:#F59E0B" aria-label="Amber"></button>
+        <button class="accentdot"    data-accent="teal"   style="background:#14B8A6" aria-label="Teal"></button>
+        <button class="accentdot"    data-accent="red"    style="background:#EF4444" aria-label="Red"></button>
+        <button class="accentdot"    data-accent="indigo" style="background:#6366F1" aria-label="Indigo"></button>
+      </div>
+      <div class="setrow" style="margin-top:20px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" style="color:var(--text2);flex-shrink:0"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+        <div class="lmain"><div class="ltitle">Accent glow</div><div class="lsub">Soft glows on buttons, cards and navigation</div></div>
+        <div class="switch on" id="glowSwitch" role="switch" aria-checked="true" tabindex="0"></div>
+      </div>
+    </div>
+    <div class="persona-note">
+      <span class="chip pr">live</span> Gitly follows your device's dark mode automatically — until you pick a theme yourself. Your choice is saved on this device, just like the app.
+    </div>
+  </div>
+</section>
+
+<!-- ============ WIDGETS ============ -->
+<section id="widgets">
+  <div class="wrap">
+    <h2 class="sect big">Your GitHub, on your home screen</h2>
+    <p class="sectsub">Five Android home-screen widgets keep your stats one glance away — even when the app is closed.</p>
+    <div class="widgetgrid">
+      <div class="widgetmock">
+        <img class="pav sm2" src="https://github.com/BonkerUnkilBonki.png" alt="" onerror="this.src='logo.jpg'">
+        <div><div class="widgetname">NOTA's</div><div class="widgetsub">@BonkerUnkilBonki</div></div>
+        <div class="widgetstat"><b>84</b><span>repos</span></div>
+        <div class="widgetstat"><b>128</b><span>followers</span></div>
+        <div class="widget-label">Gitly Profile</div>
+      </div>
+      <div class="widgetmock quick">
+        <div class="quickbtn" style="background:var(--accent);color:#fff">⌂</div>
+        <div class="quickbtn">▤</div>
+        <div class="quickbtn">!</div>
+        <div class="quickbtn">◔</div>
+        <div class="widget-label">Gitly Quick</div>
+      </div>
+      <div class="widgetmock">
+        <div class="heatwrap" data-heat="16"></div>
+        <div class="widgetstat" style="margin-top:12px"><b>12</b><span>today</span></div>
+        <div class="widgetstat"><b>318</b><span>this year</span></div>
+        <div class="widget-label">Contributions 2×2</div>
+      </div>
+      <div class="widgetmock">
+        <div class="daybars">
+          <div class="daybar"><span style="height:30%"></span><i>M</i></div>
+          <div class="daybar"><span style="height:55%"></span><i>T</i></div>
+          <div class="daybar"><span style="height:20%"></span><i>W</i></div>
+          <div class="daybar"><span style="height:72%"></span><i>T</i></div>
+          <div class="daybar"><span style="height:44%"></span><i>F</i></div>
+          <div class="daybar"><span style="height:60%"></span><i>S</i></div>
+          <div class="daybar"><span style="height:10%"></span><i>S</i></div>
+        </div>
+        <div class="heatwrap" data-heat="24" style="margin-top:8px"></div>
+        <div class="widgetstat" style="margin-top:12px"><b>318</b><span>contributions</span></div>
+        <div class="widgetstat"><b>96%</b><span>best streak</span></div>
+        <div class="widget-label">Contributions 4×4 & 4×2</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD ============ -->
+<section id="download">
+  <div class="wrap">
+    <h2 class="sect big">Get Gitly</h2>
+    <p class="sectsub">Free, no ads, no tracking. Sign in with a GitHub personal access token (scopes: repo, read:user, notifications, gist) — it is stored only on your device and talks straight to api.github.com. There is no Gitly server.</p>
+    <div class="dlgrid">
+      <div class="card dlcard">
+        <span class="dllogo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 5 3 12 8 19"/><polyline points="16 5 21 12 16 19"/></svg></span>
+        <h3>Gitly for Android</h3>
+        <p class="dlmeta">v2.68 · Android 7.0+ · signed APK from GitHub Releases</p>
+        <a class="btn primary btnblock" href="https://github.com/BonkerUnkilBonki/OneGit/releases/latest" target="_blank" rel="noopener">Download APK</a>
+        <a class="lnk" href="https://github.com/BonkerUnkilBonki/OneGit/releases" target="_blank" rel="noopener">All releases & changelog</a>
+      </div>
+      <div class="card dlcard">
+        <span class="dllogo web"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+        <h3>Gitly Web</h3>
+        <p class="dlmeta">The same One UI client as a responsive web app — PC, laptop, tablet and phone. A static site you can host anywhere.</p>
+        <a class="btn ghost btnblock" href="https://github.com/BonkerUnkilBonki/OneGit" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="lnk" href="https://pages.github.com/" target="_blank" rel="noopener">Works on GitHub Pages</a>
+      </div>
+    </div>
+    <div class="card privcard">
+      <span class="eicon create"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+      <div><b>Private by design.</b> Your token never leaves the device you signed in on. Sign out clears it. No analytics, no servers, no accounts — just you and GitHub.</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="footer">
+  <div class="wrap">
+    <div class="logo sm" style="margin:0 auto 14px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 5 3 12 8 19"/><polyline points="16 5 21 12 16 19"/></svg>
+    </div>
+    <p class="foot-title">Gitly</p>
+    <p class="foot-sub">Your GitHub, beautifully yours.</p>
+    <nav class="foot-links">
+      <a href="https://github.com/BonkerUnkilBonki/OneGit" target="_blank" rel="noopener">Source</a>
+      <a href="https://github.com/BonkerUnkilBonki/OneGit/releases" target="_blank" rel="noopener">Releases</a>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+    </nav>
+    <p class="foot-tiny">One UI design language · v2.68 · made for GitHub, with love.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
